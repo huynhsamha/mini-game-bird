@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> My Mini Game </title>
-		<meta charset = "UTF-8">
-		<link rel = "stylesheet" href = "style.css">
-    <script src = "Menu.js"> </script>
-		<script src = "Game.js"> </script>
-	</head>
 
-	<body>
-    <div class = "left">
-      <button id = "play" onclick = "Play()"> PLAY </button>
-      <button id = "pause" onclick = "Pause()"> PAUSE </button>
-      <button id = "replay" onclick = "location.href='index.html'"> REPLAY </button>
-      <button id = "about" onclick = "location.href='about.html'"> ABOUT </button>
-    </div>
-    <div class = "head" id = "head">
-      <code id = "level"> LEVEL : &nbsp; 0  </code>
-      <code id = "score"> SCORE : &nbsp; 0  </code>
-    </div>
-    <div id = "right" class = "right"> </div>
-    <div id = "gameover"> GAME OVER ! </div>
-    <div id = "demo">
-      <h1 id = "titDemo"> HÌNH ẢNH TRONG GAME </h1>
-      <img id = "imaDemo" src = "demo.png" width = 72%>
-    </div>
-  </body>
+<head>
+  <title>Mini Game Bird</title>
+  <meta charset="UTF-8">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="left">
+    <button id="play" onclick="Play()">PLAY</button>
+    <button id="pause" onclick="Pause()">PAUSE</button>
+    <button id="replay" onclick="location.href='index.html'">REPLAY</button>
+    <button id="about" onclick="location.href='about.html'">ABOUT</button>
+  </div>
+
+  <div class="head" id="head">
+    <code id="level"> LEVEL : &nbsp; 0  </code>
+    <code id="score"> SCORE : &nbsp; 0  </code>
+  </div>
+
+  <div id="right" class="right"></div>
+
+  <div id="gameover">GAME OVER!</div>
+
+  <div id="demo">
+    <h1 id="titDemo">IMAGE IN GAME</h1>
+    <img id="imaDemo" src="img/demo.png" width="72%" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/menu.js"> </script>
+  <script src="js/game.js"> </script>
+
+</body>
+
 </html>
